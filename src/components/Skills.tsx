@@ -6,8 +6,8 @@ const skills = [
   { name: "MERN", level: 60 },
   { name: "Algorithms", level: 80 },
   { name: "Problem Solving", level: 100 },
-  { name: "LLD", level: 60 },
-  { name: "MEAN", level: 60 },
+  { name: "Business", level: 80 },
+  { name: "Team Work", level: 98 },
 ];
 
 const Skills = () => {
@@ -37,7 +37,12 @@ const Skills = () => {
                   <span className="text-slate-light font-medium">{skill.name}</span>
                   <span className="text-slate">{skill.level}%</span>
                 </div>
-                <Progress value={skill.level} className="h-2" />
+                <div className="w-full bg-black rounded-full h-2.5">
+                  <div
+                    className="bg-[#33C3F0] h-2.5 rounded-full transition-all duration-500"
+                    style={{ width: `${skill.level}%` }}
+                  ></div>
+                </div>
               </motion.div>
             ))}
           </div>

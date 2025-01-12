@@ -5,17 +5,18 @@ const projects = [
   {
     title: "Jak Premiere",
     description: "A movie ticket booking website built using Python, JavaScript, HTML, CSS, and SQL.",
-    link: "#",
   },
   {
     title: "OnePercent",
     description: "A hub for fostering innovation, offering resources and collaborative spaces for creativity and skill development.",
-    link: "#",
   },
   {
     title: "OptiGo",
     description: "An autonomous wheelchair for the blind and elderly, powered by voice commands, AI, and ML for safe and intelligent navigation.",
-    link: "#",
+  },
+  {
+    title: "SonoSync",
+    description: "A safety enhancement system for hairpin bends using ultrasonic sensors and intelligent lighting to prevent accidents. Built with Python, Arduino, and AI/ML models for real-time vehicle detection and adaptive lighting control.",
   },
 ];
 
@@ -32,7 +33,7 @@ const Projects = () => {
         >
           <h2 className="text-3xl font-bold text-slate-light mb-12 text-center">Projects</h2>
           
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2">
             {projects.map((project, index) => (
               <motion.div
                 key={project.title}
@@ -41,30 +42,9 @@ const Projects = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <Card className="h-full bg-navy-light/30 backdrop-blur-lg border border-slate-dark/20 hover:border-accent transition-colors duration-300">
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold text-slate-light mb-3">{project.title}</h3>
-                    <p className="text-slate mb-4">{project.description}</p>
-                    <a
-                      href={project.link}
-                      className="inline-flex items-center text-accent hover:text-accent/80 transition-colors"
-                    >
-                      View Project
-                      <svg
-                        className="ml-2 w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M14 5l7 7m0 0l-7 7m7-7H3"
-                        />
-                      </svg>
-                    </a>
-                  </div>
+                <Card className="h-full bg-navy-light/30 backdrop-blur-lg border border-slate-dark/20 hover:border-accent transition-colors duration-300 p-6">
+                  <h3 className="text-xl font-semibold text-slate-light mb-3">{project.title}</h3>
+                  <p className="text-slate">{project.description}</p>
                 </Card>
               </motion.div>
             ))}
