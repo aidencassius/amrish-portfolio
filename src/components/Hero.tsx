@@ -16,15 +16,15 @@ const Hero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="container relative z-10 px-6 py-16 sm:py-24"
+        className="container relative z-10 px-6 py-16 sm:py-24 text-center"
       >
         <div className="max-w-4xl mx-auto">
-          <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8 mb-8">
+          <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-8 mb-8">
             <motion.span 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-accent bg-navy-light rounded-full"
+              className="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-accent bg-navy-light/50 rounded-full"
             >
               Welcome to my portfolio
             </motion.span>
@@ -59,29 +59,25 @@ const Hero = () => {
             <div className="flex flex-wrap gap-4 justify-center">
               <Button
                 onClick={() => scrollToSection('about')}
-                variant="secondary"
-                className="backdrop-blur-xl bg-white/5 hover:bg-white/10"
+                className="bg-white/20 hover:bg-white/30 text-white backdrop-blur-lg border border-white/20 transition-all"
               >
                 About Me
               </Button>
               <Button
                 onClick={() => scrollToSection('skills')}
-                variant="secondary"
-                className="backdrop-blur-xl bg-white/5 hover:bg-white/10"
+                className="bg-white/20 hover:bg-white/30 text-white backdrop-blur-lg border border-white/20 transition-all"
               >
                 Skills
               </Button>
               <Button
                 onClick={() => scrollToSection('projects')}
-                variant="secondary"
-                className="backdrop-blur-xl bg-white/5 hover:bg-white/10"
+                className="bg-white/20 hover:bg-white/30 text-white backdrop-blur-lg border border-white/20 transition-all"
               >
                 Projects
               </Button>
               <Button
                 onClick={() => scrollToSection('languages')}
-                variant="secondary"
-                className="backdrop-blur-xl bg-white/5 hover:bg-white/10"
+                className="bg-white/20 hover:bg-white/30 text-white backdrop-blur-lg border border-white/20 transition-all"
               >
                 Languages
               </Button>

@@ -26,7 +26,7 @@ const About = () => {
                 
                 <div className="flex gap-4 mt-6">
                   <a 
-                    href="https://github.com/yourusername" 
+                    href="https://github.com/AmrishS14" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-slate-light hover:text-accent transition-colors"
@@ -36,7 +36,7 @@ const About = () => {
                     </svg>
                   </a>
                   <a 
-                    href="https://linkedin.com/in/yourusername" 
+                    href="https://www.linkedin.com/in/amrish-suresh-72ba5a251/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-slate-light hover:text-accent transition-colors"
@@ -51,12 +51,11 @@ const About = () => {
               <div className="relative">
                 <div className="aspect-square rounded-lg overflow-hidden">
                   <img 
-                    src="/placeholder.svg" 
+                    src="/lovable-uploads/573b9265-992f-40a9-b676-ae3d57bb77da.png" 
                     alt="Amrish S"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="absolute inset-0 bg-navy/10 backdrop-blur-sm rounded-lg" />
               </div>
             </div>
           </Card>
