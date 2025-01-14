@@ -1,21 +1,8 @@
 import { motion } from "framer-motion";
 import { Card } from "./ui/card";
-import { Input } from "./ui/input";
-import { Textarea } from "./ui/textarea";
-import { Button } from "./ui/button";
-import { useToast } from "@/hooks/use-toast";
+import { Instagram, Linkedin, Mail } from "lucide-react";
 
 const Contact = () => {
-  const { toast } = useToast();
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Message sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
-    });
-  };
-
   return (
     <section id="contact" className="py-20 bg-navy-dark relative">
       <div className="container px-6">
@@ -29,49 +16,32 @@ const Contact = () => {
           <h2 className="text-3xl font-bold text-slate-light mb-8 text-center">Get in Touch</h2>
           
           <Card className="p-8 bg-navy-light/30 backdrop-blur-lg border border-slate-dark/20">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-slate-light mb-2">
-                  Name
-                </label>
-                <Input
-                  id="name"
-                  required
-                  className="bg-navy-light/50 border-slate-dark/20 text-slate-light"
-                />
+            <div className="flex flex-col items-center space-y-6">
+              <div className="flex items-center space-x-2 text-slate-light">
+                <Mail className="w-5 h-5" />
+                <span className="text-lg">amrishsuresh14@gmail.com</span>
               </div>
               
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-slate-light mb-2">
-                  Email
-                </label>
-                <Input
-                  id="email"
-                  type="email"
-                  required
-                  className="bg-navy-light/50 border-slate-dark/20 text-slate-light"
-                />
+              <div className="flex space-x-4">
+                <a
+                  href="https://www.instagram.com/am.i.aiden/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center justify-center w-12 h-12 rounded-full bg-white/10 backdrop-blur-lg border border-white/20 hover:bg-white/20 transition-all duration-300"
+                >
+                  <Instagram className="w-6 h-6 text-slate-light group-hover:text-accent transition-colors" />
+                </a>
+                
+                <a
+                  href="https://www.linkedin.com/in/amrish-suresh-72ba5a251/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center justify-center w-12 h-12 rounded-full bg-white/10 backdrop-blur-lg border border-white/20 hover:bg-white/20 transition-all duration-300"
+                >
+                  <Linkedin className="w-6 h-6 text-slate-light group-hover:text-accent transition-colors" />
+                </a>
               </div>
-              
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-slate-light mb-2">
-                  Message
-                </label>
-                <Textarea
-                  id="message"
-                  required
-                  className="bg-navy-light/50 border-slate-dark/20 text-slate-light"
-                  rows={4}
-                />
-              </div>
-              
-              <Button
-                type="submit"
-                className="w-full bg-accent text-navy hover:bg-accent/90 transition-colors"
-              >
-                Send Message
-              </Button>
-            </form>
+            </div>
           </Card>
         </motion.div>
       </div>
