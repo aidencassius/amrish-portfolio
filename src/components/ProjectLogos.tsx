@@ -27,6 +27,16 @@ const ProjectLogos = () => {
       src: "/lovable-uploads/e7f282ff-030e-4b68-ae58-0866ae2d72c6.png",
       alt: "OptiGo Logo",
       title: "OptiGo"
+    },
+    {
+      src: "/lovable-uploads/a352db8e-76c1-49d6-a633-c60a60ae2b17.png",
+      alt: "English Proficiency Logo",
+      title: "English Proficiency"
+    },
+    {
+      src: "/lovable-uploads/71b7a08a-0b97-4176-abb3-022a236a090c.png",
+      alt: "One Percent White Logo",
+      title: "One Percent White"
     }
   ];
 
@@ -42,7 +52,7 @@ const ProjectLogos = () => {
         Project Logos
       </motion.h3>
       
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {logos.map((logo, index) => (
           <motion.div
             key={logo.title}
