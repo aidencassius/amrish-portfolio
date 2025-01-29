@@ -20,23 +20,23 @@ const ProjectLogos = () => {
     },
     {
       src: "/lovable-uploads/bdb54711-13f2-4921-acc8-79f3d6126e43.png",
-      alt: "OnePercent Logo",
-      title: "OnePercent"
+      alt: "Optigo Logo",
+      title: "Optigo"
     },
     {
       src: "/lovable-uploads/e7f282ff-030e-4b68-ae58-0866ae2d72c6.png",
-      alt: "OptiGo Logo",
-      title: "OptiGo"
+      alt: "NYX Logo",
+      title: "NYX GLOBAL"
     },
     {
       src: "/lovable-uploads/a352db8e-76c1-49d6-a633-c60a60ae2b17.png",
-      alt: "English Proficiency Logo",
-      title: "English Proficiency"
+      alt: "Medvoc Logo",
+      title: "MEDVOC"
     },
     {
       src: "/lovable-uploads/71b7a08a-0b97-4176-abb3-022a236a090c.png",
-      alt: "One Percent White Logo",
-      title: "One Percent White"
+      alt: "One Percent Logo",
+      title: "One Percent"
     }
   ];
 
