@@ -49,7 +49,7 @@ const ProjectLogos = () => {
         transition={{ duration: 0.5 }}
         className="text-2xl font-semibold text-slate-light mb-8 text-center"
       >
-        Project Logos
+        Projects
       </motion.h3>
       
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
